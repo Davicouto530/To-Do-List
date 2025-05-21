@@ -19,10 +19,13 @@ function deleteTarefa(li, ind) {
     // Quando clicar na lixeira
     btnLixeira.addEventListener("click", (evt) => {
         evt.stopPropagation(); // Impede que o clique também marque a tarefa como lida
-        tarefas.splice(ind, 1); // Remove a tarefa do array
-        saveTarefa(); // Salva a nova lista no localStorage
-        renderizarTarefas(); // Recarrega a lista na tela
-        console.log(tarefas); // Só pra ver no console mesmo
+        if(confirm("Deseja excluir essa tarefa?")){// Aparece uma caixa perguntando se quer excluir a tarefa
+            // Se clicar em "OK" a tarefa será excluída
+            tarefas.splice(ind, 1); // Remove a tarefa do array
+            saveTarefa(); // Salva a nova lista no localStorage
+            renderizarTarefas(); // Recarrega a lista na tela
+            console.log(tarefas); // Só pra ver no console mesmo
+        }
     });
 
     li.appendChild(btnLixeira); // Coloca o botão na tarefa (li)

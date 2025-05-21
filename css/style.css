@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
@@ -14,11 +13,12 @@ body {
 
 #container {
     margin: 0 auto;
-    margin-top: 20px;
+    margin: 10px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 600px;
+    overflow: auto;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
     font-size: 1.9em;
     color: white;
     padding: 10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     text-transform: uppercase;
     width: 350px;
     text-align: center;
@@ -34,7 +34,7 @@ h1 {
 
 .caixa {
     border: 2px solid #059142;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 8px 8px;
     width: 350px;
     text-align: center;
 }
@@ -45,7 +45,7 @@ h1 {
     outline: none;
     border: none;
     padding: 6px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1em;
 }
 
@@ -53,15 +53,11 @@ h1 {
     border: none;
     width: 120px;
     padding: 6px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 1em;
     background-color: #07da63;
     color: white;
     cursor: pointer;
-}
-
-hr {
-    margin-bottom: 20px;
 }
 
 .lista {
@@ -73,6 +69,7 @@ hr {
     background-color: white;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
     list-style: none;
     cursor: pointer;
     font-size: 1em;
@@ -90,7 +87,11 @@ hr {
     cursor: pointer;
     float: right;
     margin-right: 10px;
-    transform: translate(40%, -10%);
+    transition: 0.2s;
+}
+
+.btns:hover {
+    transform: scale(1.04);
 }
 
 @media (min-width: 576px){
