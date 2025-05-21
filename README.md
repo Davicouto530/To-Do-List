@@ -20,6 +20,7 @@ O projeto permite:
 -  Adicionar tarefas
 -  Remover tarefas da lista
 -  Editar tarefa da lista
+-  Marcar como feita
 -  Armazenar tarefas no navegador usando `localStorage`
 -  Usar em dispositivos móveis (layout responsivo)
 
@@ -34,6 +35,7 @@ O site é composto por:
 - Lista dinâmica com as tarefas inseridas
 - Botões individuais para remover cada item
 - Botões para editar cada item da lista
+- Marca item da tarefa como feito ao clicar nele
 - Layout centralizado com cores suaves e interface intuitiva
 
 ---
